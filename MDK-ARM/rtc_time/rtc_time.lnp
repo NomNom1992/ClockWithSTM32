@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"rtc_time\startup_stm32f103xb.o"
+"rtc_time\lcd_16x2.o"
+"rtc_time\main.o"
+"rtc_time\stm32f1xx_it.o"
+"rtc_time\stm32f1xx_hal_msp.o"
+"rtc_time\stm32f1xx_hal_gpio_ex.o"
+"rtc_time\stm32f1xx_hal_rtc.o"
+"rtc_time\stm32f1xx_hal_rtc_ex.o"
+"rtc_time\stm32f1xx_hal.o"
+"rtc_time\stm32f1xx_hal_rcc.o"
+"rtc_time\stm32f1xx_hal_rcc_ex.o"
+"rtc_time\stm32f1xx_hal_gpio.o"
+"rtc_time\stm32f1xx_hal_dma.o"
+"rtc_time\stm32f1xx_hal_cortex.o"
+"rtc_time\stm32f1xx_hal_pwr.o"
+"rtc_time\stm32f1xx_hal_flash.o"
+"rtc_time\stm32f1xx_hal_flash_ex.o"
+"rtc_time\stm32f1xx_hal_exti.o"
+"rtc_time\stm32f1xx_hal_tim.o"
+"rtc_time\stm32f1xx_hal_tim_ex.o"
+"rtc_time\system_stm32f1xx.o"
+--strict --scatter "rtc_time\rtc_time.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "rtc_time.map" -o rtc_time\rtc_time.axf
